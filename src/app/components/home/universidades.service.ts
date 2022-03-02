@@ -22,7 +22,7 @@ private url:string="http://universities.hipolabs.com/search?country";
   }
 
   //Obtenet Pais
-  get(pais:string):Observable<Universidades>{
+  getBuscar(pais:string):Observable<Universidades>{
     return this.http.get<Universidades>(this.url+'='+pais)
   }
 
