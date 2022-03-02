@@ -1,0 +1,27 @@
+<table class="table table-dark">
+    <thead>
+      <p>Pais a Buscar: <br/>
+        <textarea name="Pais" rows="5" cols="50">Escribe tu Pais: </textarea>
+        <input type="submit" value="Buscar Pais"/>
+      <tr>
+        
+        <th scope="col">Pagina Web</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Codigo del Pais</th>
+        <th scope="col">Provincia</th>
+        <th scope="col">Dominio</th>
+        <th scope="col">Pais</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let universidades of universidad">
+        <th scope="row">{{universidades.name}} </th>
+        <td>{{universidades.alpha_two_code}} </td>
+        <td>{{universidades.state_province}} </td>
+        <td>@{{universidades.domains}} </td>
+        <td>@{{universidades.country}} </td>
+
+      </tr>>
+    </tbody>
+  </table>
+<h1>{{Lista_Uni}}</h1>
